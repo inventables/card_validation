@@ -40,7 +40,7 @@ doubling are split into individual digits.
 
 Total: 70
 
-60 is a multiple of 10, therefore this card is valid.
+70 is a multiple of 10, therefore this card is valid.
 
 
 ==Your Goal==
