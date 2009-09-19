@@ -26,19 +26,19 @@ the algorithm described below:
 2. Sum all the digits (doubled and undoubled).
 3. If the sum is a multiple of 10, the card is valid.
 
-For example, assume our card number is 4223747563628374.
+For example, assume our card number is 4223747542628374.
 
 First, double every other digit starting from the next to last, working
 backwards.
 
-8 2 4 3 14 4 14 5 12 2 16 3 14 4
+8 2 4 3 14 4 14 5 8 2 12 2 16 3 14 4
 
 Now, sum all the digits. Notice that the two digit numbers which result from
 doubling are split into individual digits.
 
-8 + 2 + 4 + 3 + 1 + 4 + 4 + 1 + 4 + 5 + 1 + 2 + 2 + 1 + 6 + 3 + 1 + 4 + 4
+8 + 2 + 4 + 3 + 1 + 4 + 4 + 1 + 4 + 5 + 8 + 2 + 1 + 2 + 2 + 1 + 6 + 3 + 1 + 4 + 4
 
-Total: 60
+Total: 70
 
 60 is a multiple of 10, therefore this card is valid.
 
@@ -46,8 +46,8 @@ Total: 60
 ==Your Goal==
 
 Your goal is to implement a ruby program which identifies valid and invalid
-credit cards. It should identify the card number 4223747563628374 as a valid
-and the number 4123747563628374 as invalid.
+credit cards. It should identify the card number 4223747542628374 as a valid
+and the number 4123747542628374 as invalid.
 
 We have provided your with a skeleton CreditCard class and a simple RSpec file
 specifying the behavior of that class.
